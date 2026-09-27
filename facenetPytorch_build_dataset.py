@@ -44,7 +44,7 @@ if not os.path.exists(outputPath):
 # initialize the video stream, allow the camera sensor to warm up,
 # and initialize the total number of example faces written to disk
 print("[INFO] starting video stream...")
-vs = VideoStream(src=0).start() # 對內攝影機, src=1 對外攝影機
+vs = VideoStream(src=1).start() # 對內攝影機, src=1 對外攝影機
 time.sleep(2.0)
 total = 0
 
